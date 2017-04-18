@@ -152,7 +152,7 @@ Intended to calibrate the energy threshold with the ambient energy level. Should
 
 The ``duration`` parameter is the maximum number of seconds that it will dynamically adjust the threshold for before returning. This value should be at least 0.5 in order to get a representative sample of the ambient noise.
 
-``recognizer_instance.listen(source, timeout = None)``
+``recognizer_instance.listen(source, timeout = None, phrase_time_limit = None)``
 ------------------------------------------------------
 
 Records a single phrase from ``source`` (an ``AudioSource`` instance) into an ``AudioData`` instance, which it returns.
